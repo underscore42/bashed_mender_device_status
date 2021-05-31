@@ -12,3 +12,13 @@ interaction, password can be entered instead.
 
 An extended version of this is running as a crontab on the same ec2 that has my mender service docker containers. Logging connection
 changes over time, and then reporting up to a test monitor.
+
+Sample output
+```
+=================================================
++ The following devices changed state           +
+=================================================
+2c2 < {"device_id":"d9c5c6e5-e9fd-4f6e-80a3-5245af11ef3d","status":"connected","created_ts":"2021-03-23T01:55:54.952Z","updated_ts":"2021-05-30T23:30:03.263Z"} --- > {"device_id":"d9c5c6e5-e9fd-4f6e-80a3-5245af11ef3d","status":"connected","created_ts":"2021-03-23T01:55:54.952Z","updated_ts":"2021-05-30T22:30:03.901Z"}
+=================================================
+
+```
